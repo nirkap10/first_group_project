@@ -69,11 +69,46 @@
         option[value="male"], option[value="female"], option[value="other"] {
             font-family: 'Raleway',sans-serif;
             color: #333;
-        }        
+        }      
+        #navbar{
+            background:purple;
+            color: #fff;
+            overflow: auto;
+        }
+        #navbar a{
+            color: #fff;
+            text-decoration: none;
+        }
+        #navbar ul{
+            list-style: none;
+            float:right;
+        }
+        #navbar ul li {
+            float:left;
+        }
+        #navbar ul li a{
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+        #navbar ul li a:hover, 
+        #navbar ul li a.current{
+            background-color: rgb(194, 31, 194);
+            color:black;
+        }  
     </style>
 </head>
 <body>
     <div id="container">
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                     <li><a href="storyboard.html">Storyboard</a></li>
+                     <li><a  href="ranking.html">Ranking</a></li>
+                     <li><a class="current" href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>  
+        </nav>
         <div class="form-wrap">
             <h1>Contact us..</h1> 
             <form>
