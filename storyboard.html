@@ -42,12 +42,48 @@
             font-size: 16px;
             padding: 5px;
         }
+        /* Navbar*/
+        #navbar{
+            background:purple;
+            color: #fff;
+            overflow: auto;
+        }
+        #navbar a{
+            color: #fff;
+            text-decoration: none;
+        }
+        #navbar ul{
+            list-style: none;
+            float:right;
+        }
+        #navbar ul li {
+            float:left;
+        }
+        #navbar ul li a{
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+        #navbar ul li a:hover, 
+        #navbar ul li a.current{
+            background-color: rgb(194, 31, 194);
+            color:black;
+        }
 
 
     </style>
 </head>
 <body>
     <div class="container">
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                     <li><a class="current" href="storyboard.html">Storyboard</a></li>
+                     <li><a  href="ranking.html">Ranking</a></li>
+                     <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>  
+        </nav>
         <div class="card">
             <img src="./css/img/comic_task1.jpg" alt="photo">
             <p>text here</p>
